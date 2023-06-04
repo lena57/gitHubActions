@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3 
         with:
-          repository: 'https://github.com/lena57/memory-game-useeffect.git'
+          repository: 'lena57/memory-game-useeffect.git'
       - name: Use Node.js '16.16.0'
         uses: actions/setup-node@v3
         with:
