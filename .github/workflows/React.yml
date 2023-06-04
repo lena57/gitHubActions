@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - uses: actions/checkout@v3 
         with:
           repository: 'patebija/simple-node-js-react-npm-app'
@@ -18,9 +19,8 @@ jobs:
         with:
           node-version: 16.16.0
       - run: npm install
-      - run: npm run start
-    
-      - name: stopping app
-        shell: bash
-        run: shutdown -n
+      - run: |
+          npm run start -d,
+          sleep 30
+          shutdown -n
     
