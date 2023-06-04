@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3 
         with:
-          repository: 'lena57/memory-game-useeffect.git'
+          repository: 'lena57/tik-tak-toe-history-moves-react.git'
       - name: Use Node.js '16.16.0'
         uses: actions/setup-node@v3
         with:
